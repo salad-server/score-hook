@@ -1,6 +1,6 @@
-import config from "./config.json" assert { type: "json" };
-import hook from "./util/discord.js";
-import Taiko from "./util/taiko.js";
+import config from "../config.json" assert { type: "json" };
+import hook from "../util/discord.js";
+import Taiko from "../util/taiko.js";
 
 export const index = (_, res) => {
     res.header("Content-Type", "text/html");
