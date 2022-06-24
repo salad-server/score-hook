@@ -1,0 +1,21 @@
+{
+    "name": "score-hook",
+    "version": "1.0.0",
+    "description": "Hook scores & post info",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "start": "node index.js",
+        "start:dev": "nodemon index.js"
+    },
+    "license": "ISC",
+    "devDependencies": {
+        "nodemon": "^2.0.18",
+        "prettier": "^2.7.1"
+    },
+    "dependencies": {
+        "consola": "^2.15.3",
+        "discord.js": "^13.8.1",
+        "fastify": "^4.1.0"
+    }
+}

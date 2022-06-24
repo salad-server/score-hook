@@ -1,0 +1,9 @@
+{
+    "port": 8085,
+
+    "webhook": {
+        "avatar": "",
+        "username": "salad-hook",
+        "client": ""
+    }
+}
