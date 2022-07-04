@@ -1,6 +1,6 @@
 {
     "port": 8085,
-
+    "dsn": "mysql://<user>:<pass>@localhost:3306/osu",
     "webhook": {
         "avatar": "",
         "username": "salad-hook",
