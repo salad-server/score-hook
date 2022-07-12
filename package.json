@@ -1,12 +1,9 @@
 {
-    "name": "score-hook",
-    "version": "1.0.0",
-    "description": "Hook scores & post info",
-    "main": "index.js",
     "type": "module",
+    "version": "1.0.0",
     "scripts": {
-        "start": "node index.js",
-        "start:dev": "nodemon index.js"
+        "start": "node src/index.js",
+        "start:dev": "nodemon src/index.js"
     },
     "license": "ISC",
     "devDependencies": {

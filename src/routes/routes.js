@@ -1,7 +1,8 @@
-import config from "../config.json" assert { type: "json" };
-import { query } from "../util/sql.js";
+import consola from "consola";
+import config from "../../config.json" assert { type: "json" };
 import hook from "../util/discord.js";
 import Taiko from "../util/taiko.js";
+import { query } from "../util/sql.js";
 
 export const index = (_, res) => {
     res.header("Content-Type", "text/html");
@@ -28,6 +29,8 @@ export const score = async (req, res) => {
         FROM maps WHERE id = ${bmap}
         LIMIT 1
     `);
+
+    consola.info(`${map[0].title} - [${map[0].version}]`);
 
     hook(
         {

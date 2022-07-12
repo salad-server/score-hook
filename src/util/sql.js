@@ -1,7 +1,7 @@
 import mysql from "mysql";
 import util from "util";
 import consola from "consola";
-import config from "../config.json" assert { type: "json" };
+import config from "../../config.json" assert { type: "json" };
 
 export const connection = mysql.createConnection(config.dsn);
 export const query = util.promisify(connection.query).bind(connection);

@@ -1,5 +1,5 @@
 import { MessageEmbed, WebhookClient } from "discord.js";
-import config from "../config.json" assert { type: "json" };
+import config from "../../config.json" assert { type: "json" };
 
 const webhookClient = new WebhookClient({ url: config.webhook.client });
 
